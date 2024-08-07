@@ -1,0 +1,71 @@
+body{
+  margin: 0;
+  background-color: black;
+}
+
+.container{
+  height: 1000px;
+
+}
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+
+}
+
+.logo{
+  width: 48px;
+  height: 48px;
+}
+
+.navbar-links{
+  display:flex;
+  list-style: none;
+}
+
+.navbar-links li{
+  padding-right: 12px;
+  color:white;
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0px;
+
+  height: 300px;
+  display:flex;
+  justify-content: space-evenly;
+}
+
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.banner-logo{
+  width:425px;
+  height:425px;
+  padding-bottom:200px;
+}
+
+.rufus-portrait{
+  width:250px;
+  border-radius:60%
+}
+
+.rufus h3, p{
+  color:white;
+}
