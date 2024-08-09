@@ -81,10 +81,15 @@ body{
   border-radius:12px;
 }
 
-.department{
+/* .department{
   width: 200px;
   height: 200px
-}
+} */
+
+
+
+
+
 
 .why-shinra{
   text-align:center;
@@ -113,45 +118,33 @@ body{
 .benefit-row-two{
   display:flex;
 }
-/*
-.reviews{
-  height: 500px;
-  width:2000px;
-  overflow:auto;
-} */
 
-
-.card-product {
-  overflow: hidden;
-  height: 120px;
-  width:80px;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+.reviews {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: nowrap; /* Prevents wrapping of review cards */
+  overflow-x: auto; /* Enables horizontal scrolling */
+  width: 100%; /* Adjusts to the full width of the container */
+  padding: 20px 0; /* Optional: Adds padding around the reviews section */
 }
 
-.card-product img {
-  height: 100%;
-  width: 120px;
+.review-card {
+  min-width: 200px; /* Ensures all review cards maintain the same width */
+  padding: 15px;
+  background-color: #f9f9f9d0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-right: 24px; /* Adds space between each review card */
+}
+
+.review-portrait {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
   object-fit: cover;
+  margin-bottom: 10px;
 }
 
-.card-product h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.card-product p {
-  font-size: 12px;
-  line-height: 1.4;
-  opacity: .7;
-  margin-bottom: 0;
-  margin-top: 8px;
-}
-
-.card-product .card-product-infos {
-  padding: 16px;
+.checked {
+  color: orange;
 }
