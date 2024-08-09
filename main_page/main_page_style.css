@@ -2,6 +2,10 @@ body{
   margin: 0;
   background-color: black;
   color:white;
+
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
 .container{
@@ -9,9 +13,12 @@ body{
 
 }
 
+h2{
+  font-size:24px;
+}
 .navbar{
   display:flex;
-  justify-content:space-between;
+  justify-content:space-around;
 
 }
 
@@ -38,19 +45,45 @@ body{
   justify-content: space-evenly;
 }
 
+.banner-text{
+  padding-top:156px;
+  padding-left:24px;
+}
 
 .banner h1 {
   margin: 0;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
+  font-size: 56px;
   font-weight: bold;
 }
 
 .banner p {
-  font-size: 20px;
+  font-size: 36px;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
+
+.join-button{
+  text-decoration: none;
+  font-size:24px;
+  color:rgba(255, 255, 255, 0.63);
+  background-color: gray;
+  border-radius: 12px;
+  padding: 8px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.join-button:hover{
+  text-decoration: none;
+  color:white;
+  background-color: rgb(163, 163, 163);
+  border-radius: 12px;
+  padding: 8px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
 
 .banner-logo{
   width:500px;
@@ -73,11 +106,24 @@ body{
   border-radius:60%
 }
 
+.rufus-message{
+  padding: 24px;
+  padding-left:48px;
+  width: 50%;
+}
+
 .rufus h3{
   text-align:center;
 }
 
+.about-us{
+  margin: 0 auto;
+  text-align:center;
+  width: 50%;
+}
+
 .about-us-pic{
+  width: 500px;
   border-radius:12px;
 }
 
@@ -96,35 +142,67 @@ body{
 }
 
 
-
 .why-shinra{
   text-align:center;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .reason{
   display:flex;
+  justify-content: center;
 }
 
 .reason-pic{
-  width: 500px;
+  width: 400px;
+  padding: 12px;
+  border-radius:24px;
 }
 
 .reason-text{
-  width:40%
+  width:45%
 }
 
-.benefit{
-  width: 85%;
+
+.benefits {
+  width: 80%; /* Adjust width as needed */
+  max-width: 1200px; /* Optional: Set a max-width for better control */
+  margin: 0 auto; /* Centers the .benefits div horizontally */
+  text-align: center; /* Centers the content inside the .benefits div */
 }
 
-.benefit-row-one{
-  display:flex;
+.benefit-row-one,
+.benefit-row-two {
+  display: flex;
+  justify-content: center; /* Centers the items within each row */
+  width: 100%; /* Makes the row take the full width of .benefits */
+  margin-bottom: 20px; /* Adds some space between rows */
 }
 
-.benefit-row-two{
-  display:flex;
+.benefit {
+  width: 45%; /* Adjust as needed to fit two items per row */
+  display: flex;
+  justify-content: flex-start; /* Aligns items within the benefit div */
+  align-items: center; /* Aligns the content vertically in the center */
+  padding: 10px; /* Optional: Adds some padding for better spacing */
+  margin: 10px; /* Optional: Adds some margin between benefits */
 }
 
+.benefit i {
+  font-size: 44px;
+  padding: 24px;
+}
+
+.benefit-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns text to the start within the benefit */
+  text-align: left; /* Aligns text to the left */
+}
+
+.review-title{
+  text-align:center;
+}
 .reviews {
   display: flex;
   flex-wrap: nowrap; /* Prevents wrapping of review cards */
@@ -136,7 +214,7 @@ body{
 .review-card {
   min-width: 200px; /* Ensures all review cards maintain the same width */
   padding: 15px;
-  background-color: #f9f9f9d0;
+  background-color: #bbbbbbd0;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -155,13 +233,53 @@ body{
   color: orange;
 }
 
+.join-us-pic {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  height: 200px;
+}
+
+.join-us-pic h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.join-us-pic p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
 
 
 
+.contact-us{
+  height:200px;
+  background-color:rgb(66, 66, 66);
+  margin: 0 auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom:100px;
+}
 
+.contact-us i{
+  font-size:36px;
+}
 
+footer{
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  padding-top: 6px;
+}
 
 footer i{
-  text-align: center;
+  text-align: right;
   color:red;
 }
