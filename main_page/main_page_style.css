@@ -1,7 +1,7 @@
 body{
   margin: 0;
   background-color: black;
-
+  color:white;
 }
 
 .container{
@@ -27,7 +27,6 @@ body{
 
 .navbar-links li{
   padding-right: 12px;
-  color:white;
 }
 
 .banner {
@@ -42,7 +41,6 @@ body{
 
 .banner h1 {
   margin: 0;
-  color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 32px;
   font-weight: bold;
@@ -50,7 +48,6 @@ body{
 
 .banner p {
   font-size: 20px;
-  color: white;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
@@ -76,15 +73,43 @@ body{
   border-radius:60%
 }
 
-.rufus h3, p{
-  color:white;
-}
-
 .rufus h3{
   text-align:center;
 }
 
+.about-us-pic{
+  border-radius:12px;
+}
+
 .department{
-  height: 85px;
-  width: 40px;
+  width: 200px;
+  height: 200px
+}
+
+.why-shinra{
+  text-align:center;
+}
+
+.reason{
+  display:flex;
+}
+
+.reason-pic{
+  width: 500px;
+}
+
+.reason-text{
+  width:40%
+}
+
+.benefit{
+  width 85%;
+}
+
+.benefit-row-one{
+  display:flex;
+}
+
+.benefit-row-two{
+  display:flex;
 }
