@@ -39,8 +39,14 @@ h2{
   text-decoration: none;
 }
 
-.navbar-links a:hover {
+.navbar-link{
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-link:hover {
   color: #fff;            /* Example of a hover effect (optional) */
+  text-decoration: underline;
 }
 
 .navbar-links a:active {
